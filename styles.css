@@ -358,8 +358,8 @@ section h3.section-subheading {
     }
 
     .col-12.col-md-4 {
-        flex-basis: 25%;
-        max-width: 25%;
+        flex-basis: 20%;
+        max-width: 20%;
     }
 }
 
