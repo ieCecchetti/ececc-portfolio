@@ -352,15 +352,14 @@ section h3.section-subheading {
 
 /* ================== SKILL SECTION ===================================*/
 @media (max-width: 575px) {
-    .logo-image {
-        text-align: center;
-        display: inline-block; /* Add this property */
-        width: 30%; /* Adjust the width as needed */
-        margin: 0 2.5%; /* Adjust the margin as needed */
+    .row {
+        flex-direction: row;
+        justify-content: center;
     }
 
-    .logo-image img {
-        max-width: 100%; /* Change the max-width to 100% */
+    .col-12.col-md-4 {
+        flex-basis: 15%;
+        max-width: 15%;
     }
 }
 
