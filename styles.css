@@ -859,6 +859,11 @@ body {
     -webkit-tap-highlight-color: #1ee2e7;
 }
 
+.custom-container {
+    margin-left: 5%; /* Adjust this value as needed for your desired margin */
+    margin-right: 5%; /* Adjust this value as needed for your desired margin */
+}
+
 .logosContainer {
     width: 100%;
     line-height: 0;
