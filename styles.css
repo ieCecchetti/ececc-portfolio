@@ -493,7 +493,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #1ee2e7;
+    background-color: #f1f1f1;
 }
 
 .timeline>li .timeline-image h4 {
@@ -858,20 +858,3 @@ body {
     margin: 0;
     -webkit-tap-highlight-color: #1ee2e7;
 }
-
-.custom-container {
-    margin-left: 5%; /* Adjust this value as needed for your desired margin */
-    margin-right: 5%; /* Adjust this value as needed for your desired margin */
-}
-
-.logosContainer {
-    width: 100%;
-    line-height: 0;
-    font-size: 0;
-  }
-
-.logo-image{
-    display: inline-block;
-    padding: 5px;
-    width: 20%;
-  }
