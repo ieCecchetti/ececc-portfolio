@@ -350,6 +350,15 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+/* ================== SKILL SECTION ===================================*/
+@media (max-width: 575px) {
+    .logo-image img {
+        max-width: 50px; /* Adjust the max-width as needed */
+    }
+}
+
+/* ================== PORTFOLIO SECTION ===================================*/
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
