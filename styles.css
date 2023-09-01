@@ -354,11 +354,13 @@ section h3.section-subheading {
 @media (max-width: 575px) {
     .logo-image {
         text-align: center;
+        display: inline-block; /* Add this property */
+        width: 30%; /* Adjust the width as needed */
+        margin: 0 2.5%; /* Adjust the margin as needed */
     }
 
     .logo-image img {
-        max-width: 15%;
-        margin: 0 2.5%; /* Adjust the margin as needed */
+        max-width: 100%; /* Change the max-width to 100% */
     }
 }
 
@@ -669,12 +671,14 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
+/* ================== CONTACT SECTION ===================================*/
 
 section#contact {
     background-color: #222;
-    background-image: url(https://unsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&auto=format&s=986aaa92169d4e97975fa66ebd60bafd);
+    background-image: url(https://wallpapers.com/images/hd/bat-signal-1920-x-1080-wallpaper-agg910t82xe5bsxs.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover; /* This scales the background image to cover the entire section */
 }
 
 section#contact .section-heading {
@@ -735,6 +739,8 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
+/* ================== FOOTER SECTION ===================================*/
+
 footer {
     padding: 25px 0;
     text-align: center;
@@ -786,6 +792,8 @@ ul.social-buttons li a:active {
 .btn:active:focus {
     outline: 0;
 }
+
+/* ================== MODAL SECTION ===================================*/
 
 .portfolio-modal .modal-content {
     padding: 100px 0;
