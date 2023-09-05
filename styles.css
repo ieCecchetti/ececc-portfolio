@@ -443,6 +443,12 @@ section h3.section-subheading {
     z-index: 2;
 }
 
+.fixed-size-img {
+    width: 100%;
+    height: 300px;
+    object-fit: center; /* This ensures the image covers the fixed-size container */
+}
+
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
