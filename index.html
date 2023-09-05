@@ -71,12 +71,57 @@
     
         <!-- Header -->
         <header>
-            <div class="container">
-                <div class="intro-text">
-                    <div class="intro-heading">Enrico Cecchetti</div>
-                    <div class="intro-lead-in">Backender Software Developer. Specialized on Python and Java RESTful Services. Check-out and enjoy my world.</div>
-                    <a href="#portfolio" class="page-scroll btn btn-xl">Portfolio</a>
+            <!-- Presentation and Marketing Section-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="first-slide" src="https://media.istockphoto.com/id/1395321519/photo/digital-background-with-movement-of-glowing-particles-complex-technologies-of-big-data-3d.webp?b=1&s=170667a&w=0&k=20&c=0SWIokXTPzOv6WfRPmyBIV9-6Twxs7SfMAMZCJ6Pw-A=" alt="First slide">
+                    <div class="container">
+                    <div class="carousel-caption text-left">
+                        <h1>Enrico Cecchetti</h1>
+                        <h3><p>Backender Software Developer. Specialized on Python and Java RESTful Services. Check-out and enjoy my world.</p></h3>
+                        <p><a class="btn btn-lg btn-primary" href="#portfolio" role="button">Portfolio</a></p>
+                    </div>
+                    </div>
                 </div>
+                <div class="carousel-item">
+                    <img class="second-slide" src="https://static.vecteezy.com/system/resources/previews/002/523/012/original/wide-tropical-beach-banner-background-vector.jpg" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>You heard about my app?</h1>
+                            <h3>
+                                <p>I know who you are! You are like me. A person who loves to travel but doesn't feel like keeping up with travel plans. You know what? Try my app, and you'll see that you won't regret it.</p>
+                            </h3>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                            <!-- Add the QR code image here -->
+                            <img src="data:image/png;base64,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" alt="QR code" class="qr-code">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="third-slide" src="https://img.freepik.com/free-vector/fantasy-alien-planet-landscape-space-game-vector_107791-13259.jpg?w=2000" alt="Third slide">
+                    <div class="container">
+                    <div class="carousel-caption text-right">
+                        <h1>Wanna Compete?</h1>
+                        <h3><p>Challenge me in the games i created. I curious will you beat me or are you like the others?</p></h3>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Play</a></p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
             </div>
         </header>
     
