@@ -265,7 +265,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(https://media.istockphoto.com/id/1395321519/photo/digital-background-with-movement-of-glowing-particles-complex-technologies-of-big-data-3d.webp?b=1&s=170667a&w=0&k=20&c=0SWIokXTPzOv6WfRPmyBIV9-6Twxs7SfMAMZCJ6Pw-A=);
+    background-image: url(https://wallpapers.com/images/hd/pixel-art-background-evf0fmyvu0u03yt2.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -370,9 +370,26 @@ section h3.section-subheading {
     }
 }
 
+/* Images will shrink slightly to fit inside */
+.img-fluid {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 /* ================== PORTFOLIO SECTION ===================================*/
 
+.img-project {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover ; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
 #portfolio .portfolio-item {
+    position: relative;
+    overflow: hidden; /* Prevents image from overflowing the container */
     right: 0;
     margin: 0 0 15px;
 }
@@ -448,6 +465,100 @@ section h3.section-subheading {
         margin: 0 0 30px;
     }
 }
+
+/* Container for all images */
+.languages-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    grid-gap: 20px; /* Space between the images */
+    justify-items: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Individual floating images */
+.floating-img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects to enlarge images and add depth */
+.floating-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure images fit inside their container */
+.img-fluid {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+/* Add animations to each image */
+@keyframes float1 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(30%, -20%); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float2 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-30%, 20%); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float3 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(20%, 10%); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float4 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-20%, -10%); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float5 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(15%, -15%); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float6 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-15%, 10%); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float7 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(10%, -10%); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float8 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-10%, 15%); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Apply animations to each floating image */
+.image1 { animation: float1 6s infinite ease-in-out; }
+.image2 { animation: float2 6s infinite ease-in-out; }
+.image3 { animation: float3 6s infinite ease-in-out; }
+.image4 { animation: float4 6s infinite ease-in-out; }
+.image5 { animation: float5 6s infinite ease-in-out; }
+.image6 { animation: float6 6s infinite ease-in-out; }
+.image7 { animation: float7 6s infinite ease-in-out; }
+.image8 { animation: float8 6s infinite ease-in-out; }
+
 
 /* ================== TIMELINE SECTION ===================================*/
 
@@ -681,7 +792,7 @@ section h3.section-subheading {
 
 section#contact {
     background-color: #222;
-    background-image: url(https://wallpapers.com/images/hd/bat-signal-1920-x-1080-wallpaper-agg910t82xe5bsxs.jpg);
+    background-image: url(https://images6.alphacoders.com/102/1027689.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* This scales the background image to cover the entire section */

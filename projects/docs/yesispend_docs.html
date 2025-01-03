@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App - Beta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #3b8d99;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #3b8d99;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .feature {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .feature img {
+            max-width: 300px;
+            margin: 0 20px;
+        }
+        .feature-content {
+            flex: 1;
+        }
+        .feature-content h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .feature-content p {
+            font-size: 16px;
+            color: #555;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #3b8d99;
+            color: #fff;
+        }
+        .cta a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #ff7043;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* New section to style the images on the left and right */
+        .image-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .image-wrapper img {
+            max-width: 45%;  /* Limit width to make them sit side by side */
+            object-fit: contain; /* Ensures the image fits inside the container without distortion */
+        }
+        .feature-content {
+            max-width: 50%;  /* Limits text width for balance */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Track Your Expenses with Ease</h1>
+    <p>Stay on top of your finances and make budgeting easier with our intuitive app.</p>
+</header>
+
+<section>
+    <h2>Key Features</h2>
+    
+    <!-- Feature with images on the left and right -->
+    <div class="image-wrapper">
+        <img src="../../res/yesispend/categories.png" alt="Track Expenses">
+        <div class="feature-content">
+            <h3>Track Your Spending</h3>
+            <p>Monitor your expenses effortlessly. Easily categorize your spending to get a clear overview of where your money goes each month.</p>
+        </div>
+    </div>
+
+    <div class="image-wrapper">
+        <div class="feature-content">
+            <h3>Set Personalized Budgets</h3>
+            <p>Use the transaction filter to quickly find specific expenses, making it easier to manage and review your spending history.</p>
+        </div>
+        <img src="../../res/yesispend/filters.png" alt="Track Expenses">
+    </div>
+
+    <div class="image-wrapper">
+        <img src="../../res/yesispend/graphs.png" alt="Track Expenses">
+        <div class="feature-content">
+            <h3>View Detailed Reports</h3>
+            <p>Get insights into your financial habits with detailed reports, helping you understand your spending patterns and make better financial decisions.</p>
+        </div>
+    </div>
+
+    <div class="image-wrapper">
+        <div class="feature-content">
+            <h3>Data Privacy & Security</h3>
+            <p>All your financial data is securely stored on your device, ensuring your information remains private and protected at all times.</p>
+        </div>
+        <img src="../../res/yesispend/security.png" alt="Track Expenses">
+    </div>
+
+</section>
+
+<section class="cta">
+    <h2>Join the Beta and Help Us Improve!</h2>
+    <p>Your feedback is essential to making this app even better. Be a part of our beta testing group and help shape the future of financial management.</p>
+    <a href="https://yourapp.com/beta" target="_blank">Join the Beta</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 LevelApp. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
