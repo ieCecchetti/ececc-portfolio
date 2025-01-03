@@ -11,7 +11,8 @@
 
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/script.js"></script>
     <style>
         /* Set a fixed size for the menu panel */
         .menu-panel {
@@ -62,6 +63,7 @@
             border-bottom: 3px solid #007bff; /* Active tab border */
         }
 
+
         .back-btn {
             margin-top: 20px;
             font-size: 18px;
@@ -86,11 +88,10 @@
         <h1>YesISpend</h1>
         <p class="text-muted">App to track and manage your monthly expenses.</p>
 
-        <!-- Menu Panel -->
         <div class="menu-panel">
             <div class="tab-link-container">
                 <!-- Menu Choices (Docs, Privacy) as divs -->
-                <div class="tab-link active-tab" id="docs-link">Docs</div>
+                <div class="tab-link" id="docs-link">Docs</div>
                 <div class="tab-link" id="privacy-link">Privacy</div>
             </div>
 
@@ -98,13 +99,12 @@
             <div class="tab-content">
                 <!-- Docs Panel -->
                 <div class="tab-pane active" id="docs-panel">
-                    <object type="text/html" data="docs/yesispend_docs.html" class="embed-container"></object>
+                <object type="text/html" data="docs/yesispend_docs.html" class="embed-container"></object>
                 </div>
 
                 <!-- Privacy Panel -->
                 <div class="tab-pane" id="privacy-panel">
-                    <!-- Embed another HTML page using the object tag -->
-                    <object type="text/html" data="privacy_policy/yesispend_termly.html" class="embed-container"></object>
+                <object type="text/html" data="privacy_policy/yesispend_termly.html" class="embed-container"></object>
                 </div>
             </div>
         </div>
