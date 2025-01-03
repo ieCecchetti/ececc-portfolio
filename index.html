@@ -29,7 +29,15 @@
         <!-- Additional scripts or stylesheets -->
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="/script.js"></script>
-        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init({
+                publicKey: "DQuUgl2ufcVyieyal",
+                });
+            })();
+        </script>
     </head>
 
     <body id="page-top" class="index" data-pinterest-extension-installed="cr1.3.4">
@@ -490,9 +498,6 @@
     </body>
 
     <script type="text/javascript">
-        // Initialize EmailJS
-        emailjs.init("DQuUgl2ufcVyieyal"); // Replace with your EmailJS User ID
-
         function sendEmail(event) {
             event.preventDefault(); // Prevent form from submitting the traditional way
 
@@ -513,12 +518,12 @@
             }
 
             // Send the form data via EmailJS
-            emailjs.send("service_ornbnlo", "template_ry2mlgg", {
-                name: name,
-                email: email,
-                phone: phone,
-                message: message
-            }).then(function(response) {
+            emailjs.send("service_ornbnlo","template_yrw3k8e",{
+                    name: name,
+                    email: email,
+                    phone: phone,
+                    message: message,
+                }).then(function(response) {
                 // Show success message
                 document.getElementById("statusMessage").style.display = "block";
                 document.getElementById("statusMessage").innerHTML = "<p style='color: green;'>Your message has been sent successfully!</p>";
