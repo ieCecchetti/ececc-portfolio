@@ -1,10 +1,4 @@
-/*!
- * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
- body {
+body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -127,6 +121,23 @@ fieldset[disabled] .btn-primary.active {
     font-weight: 700;
     color: #fff;
     background-color: #1ee2e7;
+}
+
+.btn-portfolio {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px; /* Match the rounded edges of bymeacoffee */
+    padding: 15px 30px; 
+    font-size: 16px;
+    display: inline-block;
+    width: 217px; 
+    height: 60px;
+    text-align: center;
+    line-height: 30px; 
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-xl:hover,
@@ -798,6 +809,25 @@ section h3.section-subheading {
 
 .team-member p {
     margin-top: 0;
+}
+
+/* ================== BUT ME A COFFEE ===================================*/
+
+#support {
+    padding: 30px 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#support h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#support p {
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 /* ================== CONTACT SECTION ===================================*/
