@@ -902,30 +902,30 @@ section#contact .text-danger {
 /* ================== FOOTER SECTION ===================================*/
 
 footer {
-    padding: 25px 0;
     text-align: center;
+    padding: 2rem;  /* Increased padding for better spacing */
+    margin-top: 3rem;
+    color:  #222;
+    font-size: 0.9rem;
 }
 
-footer span.copyright {
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+footer a {
+    text-decoration: none;
 }
 
-footer ul.quicklinks {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-buttons {
+    padding-top: 20px; 
 }
 
 /* Social Buttons */
 ul.social-buttons {
     margin-bottom: 0;
-    padding: 0; /* Remove padding */
-    list-style: none; /* Remove default list styles */
+    padding: 0; 
+    list-style: none;
 }
 
 ul.social-buttons li a {
