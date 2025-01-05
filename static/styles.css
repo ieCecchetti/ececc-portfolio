@@ -129,8 +129,8 @@ fieldset[disabled] .btn-primary.active {
     text-transform: uppercase;
     text-decoration: none;
     border: none;
-    border-radius: 8px; /* Match the rounded edges of bymeacoffee */
-    padding: 15px 30px; 
+    border-radius: 8px !important; 
+    padding: 15px 30px !important; 
     font-size: 16px;
     display: inline-block;
     width: 217px; 
@@ -138,6 +138,7 @@ fieldset[disabled] .btn-primary.active {
     text-align: center;
     line-height: 30px; 
     transition: all 0.3s ease-in-out;
+    background-color: #1ee2e7 !important;
 }
 
 .btn-xl:hover,
