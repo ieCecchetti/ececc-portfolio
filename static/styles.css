@@ -1,6 +1,14 @@
-body {
-    overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Keeps scrolling enabled */
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    scrollbar-width: none; /* For Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
 }
 
 .text-muted {
